@@ -8,7 +8,7 @@ public class MyAppNombres {
 	static ListaDinamica<String> nom = new ListaDinamica<String>(30);
 	
 	// Estructura del menu:
-	static int menu() {
+	static int menu() { 
 		int opc = 0;
 		String[] datos = {
 			"1) Agregar nombre",
@@ -80,9 +80,10 @@ public class MyAppNombres {
 	        nombre.setNombre(JOptionPane.showInputDialog(null, "Proporciona un nombre a buscar:"));
 	        int i = nom.search(nombre.getNombre());
 	        if(i==-1)
-	           JOptionPane.showMessageDialog(null, "No es posible localizar el nombre [ "+nombre+" ]");
+	            JOptionPane.showMessageDialog(null, "No es posible localizar el nombre [ "+nombre+" ]");
 	        else
-	           nom.delete(i);
+	            nom.delete(i);
+	            JOptionPane.showMessageDialog(null, "[ "+nombre+" ] ha sido eliminad@ correctamente");
 		} catch(ExcepcionDeListaVacia e) {
 			System.err.println(e.getMessage());
 		}
