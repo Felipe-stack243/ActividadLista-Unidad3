@@ -4,8 +4,7 @@ import javax.swing.JOptionPane;
 import ed.ito.*;
 
 public class MyAppNombres {
-	// static ListaOrdenada<Nombres> nom = new ListaOrdenada<Nombres>(30);
-	static ListaDinamica<String> nom = new ListaDinamica<String>(30);
+	static ListaOrdenada<String> nom = new ListaOrdenada<String>(30);
 	
 	// Estructura del menu:
 	static int menu() { 
